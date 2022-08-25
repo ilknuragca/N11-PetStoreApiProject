@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="122.047">
+    <testcase classname="N11 Favori Urun" name="Favori Urun Ekle-Sil Senaryo" time="121.846">
+        <failure message="invalid session id&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-IOMN7IU', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f342b89723b38e3b961d53cf5cbf2c68, setTimeout {implicit=15000}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52135/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f342b89723b38e3b961d53cf5cbf2c68" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given kullanıcı "n11Url" sayfasına gider....................................passed
+Then ana sayfanın açıldığı kontrol edilir...................................passed
+When kullanıcı giris yap sekmesine tıklar...................................passed
+When kullanıcı siteye email ve sifre ile Login olur.........................passed
+Then login işlemi kontrol edilir............................................passed
+When kullanıcı search kutusuna "Iphone" kelimesi yazarak arama yapar........passed
+Then "Iphone" kelimesi aratıldığı kontrol edilir............................passed
+When kullanıcı arama sonuçları sayfasından "2". sayfayı açar................passed
+Then "2" sayfanın açıldığı kontrol edilir...................................passed
+When kullanıcı sayfada ki "3". ürünü favorilerine ekler.....................passed
+When kullanıcı Hesabım bölümünden Favorilerim sayfasına gider...............passed
+Then Favorilerim sayfasının açıldığı kontrol edilir.........................passed
+When kullanıcı eklediği ürünü favorilerden siler............................passed
+Then "Ürününüz listeden silindi." yazisini kontrol eder ve Tamam butonuna tiklanir.passed
+When Hesabim sekmesinden Uye cikis islemi yapılır...........................passed
+Then sayfa kapatılır........................................................passed
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-IOMN7IU', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f342b89723b38e3b961d53cf5cbf2c68, setTimeout {implicit=15000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52135/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f342b89723b38e3b961d53cf5cbf2c68
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:869)
+	at utilities.Driver.getDriver(Driver.java:50)
+	at hooks.Hooks.afterStep(Hooks.java:20)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

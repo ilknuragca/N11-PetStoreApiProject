@@ -34,3 +34,4 @@ runners package--> ApiRunner class
 @api_post / @api_get / @api_put / api_delete or @api tags execute for all scenarios
 
 After execution completes, report will be available in target/default-cucumber-reports.html
+ Thank you
